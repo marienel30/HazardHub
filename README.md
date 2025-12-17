@@ -68,4 +68,5 @@ Cavite State University – Carmona Campus
 
 # License
 
-This project is intended strictly for academic and research purposes.
+This project is intended strictly for academic and research purposes. 
+

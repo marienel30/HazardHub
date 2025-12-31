@@ -1,11 +1,5 @@
 #LogIn
 
-.yellow-wrapper {
-  background-color: #f1c40f; /* yellow */
-  padding: 40px 30px;        /* creates top & bottom yellow */
-  border-radius: 20px;
-}
-
 * {font-family: 'Poppins', sans-serif;
 }
 
@@ -17,6 +11,12 @@ body {
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
+  
+}
+.yellow-wrapper {
+  background-color: #f1c40f; /* yellow */
+  padding: 40px 30px;        /* creates top & bottom yellow */
+  border-radius: 20px;
 }
 
 .login-container {

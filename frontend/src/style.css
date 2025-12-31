@@ -1,7 +1,6 @@
 #LogIn
 
-* {font-family: 'Poppins', sans-serif;
-}
+
 
 body {
   margin: 0;
@@ -10,17 +9,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   
 }
-.yellow-wrapper {
-  background-color: #f1c40f; /* yellow */
-  padding: 40px 30px;        /* creates top & bottom yellow */
-  border-radius: 20px;
-}
+
 
 .login-container {
-  background: #f1c40f;
+  background: #efbf04;
   padding: 50px;
   border-radius: 20px;
 }

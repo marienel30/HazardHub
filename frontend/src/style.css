@@ -1,91 +1,109 @@
-#LogIn
-
-
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
 
 body {
   margin: 0;
-  height: 100vh;
-  background: #f4f4f4;
+  background: #ffffff;
+}
+
+.bar {
+  height: 30px;
+  background: #f2c300;
+}
+
+/* Centering */
+.container {
+  min-height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Poppins, sans-serif;
-  
 }
 
-
-.login-container {
-  background: #f1c40f;
-  padding: 25px;
+/* Main card */
+.card {
+  background: #f2c300;
+  width: 380px;
+  padding: 40px 30px;
   border-radius: 20px;
-}
-
-.login-card {
-  background: #f9e27d;
-  padding: 30px;
-  border-radius: 16px;
-  width: 300px;
   text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.logo img {
-  width: 60px;
-  margin-bottom: 10px;
+/* Icon */
+.icon {
+  margin-bottom: 15px;
 }
 
-.logo h1 {
-  margin: 0;
-  color: #ffffff;
-  font-size: 28px;
-  font-weight: 700; /* Bold for first word */ 
+/* Title */
+h1 {
+  margin: 10px 0 25px;
+  color: #fff;
 }
 
-.logo h1 span {
-  font-weight: 400; /* Lighter for second word */
-  color: white;     /* Optional: accent color */
+.bold {
+  font-weight: 700;
 }
 
-
-.logo span {
-  color: white;
+.light {
+  font-weight: 300;
 }
 
-input {
+/* Login box */
+.login-box {
+  background: #f6dc6d;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.login-box input {
   width: 100%;
-  padding: 10px;
-  margin-top: 15px;
-  border-radius: 8px;
+  padding: 10px 14px;
   border: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 14px;
 }
 
-.password-box {
+/* Password field */
+.password-field {
   position: relative;
 }
 
-.password-box .eye {
+.password-field .eye {
   position: absolute;
-  right: 10px;
+  right: 14px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  font-size: 14px;
 }
 
+/* Forgot password */
 .forgot {
   display: block;
-  text-align: right;
-  margin-top: 10px;
+  text-align: left;
   font-size: 12px;
-  color: #333;
+  color: #fff;
   text-decoration: none;
+  margin: 5px 0 15px;
 }
 
+/* Button */
 button {
-  margin-top: 20px;
   width: 100%;
   padding: 10px;
+  background: #f2c300;
   border: none;
-  background: #f1c40f;
+  border-radius: 20px;
   font-weight: bold;
-  border-radius: 8px;
+  color: #fff;
   cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
 }

@@ -34,19 +34,16 @@ body {
 
 .logo h1 {
   margin: 0;
-  font-weight: lighter;
   color: #ffffff;
-  h1 {
   font-size: 28px;
-  font-weight: 700; /* Bold for first word */
+  font-weight: 700; /* Bold for first word */ 
 }
 
-h1 span {
+.logo h1 span {
   font-weight: 400; /* Lighter for second word */
   color: white;     /* Optional: accent color */
 }
 
-}
 
 .logo span {
   color: white;

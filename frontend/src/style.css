@@ -2,7 +2,7 @@
   box-sizing: border-box;
   h1 {
   color: #ffffff; /* white */
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Inter", "Montserrat", "Roboto", sans-serif;
 }
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 .icon img {
-  width: 90px;
+  width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -46,7 +46,7 @@ h1 {
 }
 
 .bold {
-  font-weight: 750;
+  font-weight: 800;
 }
 
 .light {
@@ -71,7 +71,7 @@ h1 {
 .forgot {
   display: block;
   font-size: 12px;
-  color: #000;
+  color: #ffffff;
   text-align: left;
   margin-bottom: 15px;
   text-decoration: none;

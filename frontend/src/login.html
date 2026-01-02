@@ -35,55 +35,8 @@
         <button>LOGIN</button>
       </div>
 
-    </div>
-  </main>
-
-  <!-- Bottom bar -->
-  <div class="bar"></div>
-
-  <button onclick="login()">LOGIN</button>
-  <input type="email" id="email" placeholder="Email">
-<input type="password" id="password" placeholder="Password">
-<script>
-  function login() {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    // Add your login logic here
-    console.log('Email:', email);
-    console.log('Password:', password);
-  }
-  <script>
-  function login() {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    if (email === "" || password === "") {
-      alert("Please fill in all fields");
-      return;
-    }
-
-    // TEMPORARY LOGIN CHECK
-    if (email === "admin@gmail.com" && password === "1234") {
-      alert("Login successful!");
-      window.location.href = "dashboard.html";
-    } else {
-      alert("Invalid email or password");
-    }
-  }
-</script>
-
-#Forgot_Password_Link
-<a href="forgot-password.html" class="forgot">Forgot Password?</a>
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Forgot Password</title>
-</head>
-<body>
-
-<h2>Forgot Password</h2>
-<input type="email" placeholder="Enter your email">
-<button>Send Reset Link</button>
+    
+  
 
 
 

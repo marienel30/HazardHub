@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -9,37 +9,33 @@ body {
 }
 
 .bar {
-  height: 30px;
-  background: #f2c300;
+  height: 25px;
+  background: #f2c200;
 }
 
-/* Centering */
 .container {
-  min-height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: calc(100vh - 50px);
 }
 
-/* Main card */
 .card {
-  background: #f2c300;
+  background: #f2c200;
   width: 380px;
-  padding: 40px 30px;
+  padding: 30px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-/* Icon */
 .icon {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-/* Title */
 h1 {
   margin: 10px 0 25px;
-  color: #fff;
+  font-size: 32px;
 }
 
 .bold {
@@ -47,60 +43,40 @@ h1 {
 }
 
 .light {
-  font-weight: 300;
+  font-weight: 400;
 }
 
-/* Login box */
 .login-box {
-  background: #f6dc6d;
+  background: #f6da73;
   padding: 20px;
-  border-radius: 16px;
-  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
 }
 
 .login-box input {
   width: 100%;
-  padding: 10px 14px;
+  padding: 12px;
+  margin-bottom: 12px;
   border: none;
-  border-radius: 20px;
-  margin-bottom: 10px;
-  outline: none;
+  border-radius: 10px;
   font-size: 14px;
 }
 
-/* Password field */
-.password-field {
-  position: relative;
-}
-
-.password-field .eye {
-  position: absolute;
-  right: 14px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  font-size: 14px;
-}
-
-/* Forgot password */
 .forgot {
   display: block;
-  text-align: left;
   font-size: 12px;
-  color: #fff;
+  color: #000;
+  text-align: left;
+  margin-bottom: 15px;
   text-decoration: none;
-  margin: 5px 0 15px;
 }
 
-/* Button */
 button {
-  width: 100%;
+  width: 120px;
   padding: 10px;
-  background: #f2c300;
+  background: #f2c200;
   border: none;
-  border-radius: 20px;
+  border-radius: 12px;
   font-weight: bold;
-  color: #fff;
   cursor: pointer;
 }
 

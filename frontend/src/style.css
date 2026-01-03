@@ -1,79 +1,95 @@
+* {
+  box-sizing: border-box;
+  h1 {
+  color: #ffffff; /* white */
+  font-family: "Poppins", "Inter", "Montserrat", "Roboto", sans-serif;
+}
+}
+
 body {
   margin: 0;
   background: #ffffff;
-  font-family: 'Inter', sans-serif;
 }
 
-.page {
-  min-height: 100vh;
+.bar {
+  height: 25px;
+  background: #f2c200;
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: calc(100vh - 50px);
 }
 
-.login-card {
+.card {
   background: #f2c200;
-  width: 340px;
-  padding: 30px 25px;
+  width: 380px;
+  padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   text-align: center;
-}
-.login-card h1 {
-  color: #ffffff;
-  font-size: 28px;
-  font-weight: 700;
-  margin: 15px 0 25px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-.login-card h1 span {
+.icon img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 0px;
+  
+}
+
+
+
+h1 {
+  margin: 10px 0 25px;
+  font-size: 32px;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.light {
   font-weight: 400;
 }
-.login-form {
-  background: #f7db77;
+
+.login-box {
+  background: #f6da73;
   padding: 20px;
-  border-radius: 16px;
+  border-radius: 15px;
 }
 
-.login-form input {
+.login-box input {
   width: 100%;
-  padding: 12px 14px;
+  padding: 12px;
   margin-bottom: 12px;
-
   border: none;
   border-radius: 10px;
-
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
 }
-.forgot-password {
-  display: block;
-  text-align: left;
-  margin-bottom: 15px;
 
+.forgot {
+  display: block;
+  font: Inter;
   font-size: 12px;
   color: #ffffff;
+  text-align: left;
+  margin-bottom: 15px;
   text-decoration: none;
 }
 
-.forgot-password:hover {
-  text-decoration: underline;
-}
-.login-btn {
-  width: 100%;
-  padding: 12px;
-
+.button {
+  width: 120px;
+  padding: 10px;
   background: #f2c200;
-  color: #ffffff;
-
   border: none;
-  border-radius: 999px;
-
-  font-size: 14px;
-  font-weight: 700;
+  border-radius: 12px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.login-btn:hover {
-  background: #e0b000;
+.button:hover {
+  opacity: 0.9;
 }
+

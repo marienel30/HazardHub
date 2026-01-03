@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="login.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hazard Hub - Login</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page">
-    <div class="login-card">
 
-      <img src="icon.png" class="logo" />
+  <!-- Top bar -->
+  <div class="bar"></div>
+
+  <main class="container">
+    <div class="card">
+
       <div class="icon">
   <img src="images/hazard-logo.png" alt="Hazard Hub Logo">
 </div>
 
 
-      <h1>Hazard <span>Hub</span></h1>
+      <!-- Title -->
+      <h1>
+        <span class="bold">Hazard</span>
+        <span class="light"> Hub</span>
+      </h1>
 
-      <form class="login-form">
+      <!-- Login box -->
+      <div class="login-box">
         <input type="email" placeholder="Email" />
         <input type="password" placeholder="Password" />
 
-        <a href="#" class="forgot-password">Forgot Password</a>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <a href="#" class="forgot">Forgot Password</a>
 
-
-        <button type="submit" class="login-btn">LOGIN</button>
-      </form>
+        <button>LOGIN</button>
+      </div>
 
     </div>
-  </div>
+  </main>
+
+  <!-- Bottom bar -->
+  <div class="bar"></div>
+
 </body>
+</html>

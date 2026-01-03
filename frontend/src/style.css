@@ -1,95 +1,79 @@
-* {
-  box-sizing: border-box;
-  h1 {
-  color: #ffffff; /* white */
-  font-family: "Poppins", "Inter", "Montserrat", "Roboto", sans-serif;
-}
-}
-
 body {
   margin: 0;
   background: #ffffff;
+  font-family: 'Inter', sans-serif;
 }
 
-.bar {
-  height: 25px;
-  background: #f2c200;
-}
-
-.container {
+.page {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 50px);
 }
 
-.card {
+.login-card {
   background: #f2c200;
-  width: 380px;
-  padding: 30px;
+  width: 340px;
+  padding: 30px 25px;
   border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   text-align: center;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.login-card h1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 15px 0 25px;
 }
 
-.icon img {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 0px;
-  
-}
-
-
-
-h1 {
-  margin: 10px 0 25px;
-  font-size: 32px;
-}
-
-.bold {
-  font-weight: 800;
-}
-
-.light {
+.login-card h1 span {
   font-weight: 400;
 }
-
-.login-box {
-  background: #f6da73;
+.login-form {
+  background: #f7db77;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 16px;
 }
 
-.login-box input {
+.login-form input {
   width: 100%;
-  padding: 12px;
+  padding: 12px 14px;
   margin-bottom: 12px;
+
   border: none;
   border-radius: 10px;
-  font-size: 14px;
-}
 
-.forgot {
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+.forgot-password {
   display: block;
-  font: Inter;
-  font-size: 12px;
-  color: #ffffff;
   text-align: left;
   margin-bottom: 15px;
+
+  font-size: 12px;
+  color: #ffffff;
   text-decoration: none;
 }
 
-.button {
-  width: 120px;
-  padding: 10px;
+.forgot-password:hover {
+  text-decoration: underline;
+}
+.login-btn {
+  width: 100%;
+  padding: 12px;
+
   background: #f2c200;
+  color: #ffffff;
+
   border: none;
-  border-radius: 12px;
-  font-weight: bold;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
 }
 
-.button:hover {
-  opacity: 0.9;
+.login-btn:hover {
+  background: #e0b000;
 }
-

@@ -1,20 +1,25 @@
-* {
-  box-sizing: border-box;
-  h1 {
-  color: #ffffff; /* white */
-  font-family: "Poppins", "Inter", "Montserrat", "Roboto", sans-serif;
-}
-}
-
-body {
+*body {
   margin: 0;
   background: #ffffff;
+  font-family: 'Inter', sans-serif;
 }
 
-.bar {
-  height: 25px;
-  background: #f2c200;
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.login-card {
+  background: #f2c200;
+  width: 340px;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
 
 .container {
   display: flex;

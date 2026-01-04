@@ -32,7 +32,7 @@
 
         <a href="#" class="forgot">Forgot Password</a>
 
-        <button>LOGIN</button>
+        <button class="login-button">LOGIN</button>
       </div>
 
     </div>

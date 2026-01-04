@@ -52,6 +52,7 @@ h1 {
 
 .light {
   font-weight: 400;
+  color:black;
 }
 
 .login-box {
@@ -100,6 +101,7 @@ h1 {
   padding-left:25px;
   padding-right: 25px;
  border: none;
+ font-weight: bold;
   border-radius: 12px;
 
 }

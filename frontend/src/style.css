@@ -2,7 +2,7 @@
   box-sizing: border-box;
   h1 {
   color: #ffffff; /* white */
-  font-family: "Poppins", "Inter", "Montserrat", "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 }
 
@@ -72,9 +72,9 @@ h1 {
 
 .forgot {
   display: block;
-  font: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
-  color: #040404;
+  color: #ffffff;
   text-align: left;
   margin-bottom: 15px;
   margin-left: 5px;

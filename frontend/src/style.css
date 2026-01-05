@@ -43,12 +43,14 @@ body {
 
 
 h1 {
+  font-family: 'Poppins', sans-serif;
   margin: 10px 0 25px;
   font-size: 32px;
 }
 
 .bold {
   font-weight: 800;
+  color: rgb(255, 255, 255);
 }
 
 .light {

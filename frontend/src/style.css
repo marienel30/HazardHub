@@ -71,7 +71,10 @@ h1 {
   border: none;
   border-radius: 10px;
   font-size: 14px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
 }
+
 
 .forgot {
   display: block;

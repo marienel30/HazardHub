@@ -1,7 +1,7 @@
 # HazardHub
 Project Overview
 
-HazardHub is a web-based safety monitoring and incident reporting system developed for industrial workplace environments. The system is designed to replace traditional paper-based safety reporting processes by providing a centralized digital platform for reporting, monitoring, and managing workplace hazards and incidents. It enables employees to submit safety reports efficiently while allowing administrators and Environment, Health, and Safety (EHS) personnel to review, track, and respond to reported issues in a timely manner. The system integrates the YOLOv8 object detection algorithm for image-based hazard and personal protective equipment (PPE) compliance detection and supports QR code access to streamline the reporting process.
+HAZARDHUB is a web-based safety monitoring and reporting system designed to improve workplace safety through efficient incident documentation and analysis. The system allows employees to submit hazard reports online, while administrators can monitor incidents and manage responses in real time. It uses the Naive Bayes algorithm to analyze hazard descriptions and classify incidents based on risk level, helping prioritize critical cases. The system is developed using React for the frontend, Python with Flask for the backend, and MySQL for data storage, providing a reliable and user-friendly platform for safety management.
 
 # Objectives
 

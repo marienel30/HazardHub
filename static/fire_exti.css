@@ -1,0 +1,171 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; text-align: center;}
+
+body { margin: 0; background: #fdfdfd; }
+
+.container { display: block; }
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background: #f1c40f;
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo { 
+     width: 200px;
+     display: block;
+     margin-left: -15px; 
+     margin-bottom: -15px;
+    }
+
+.sidebar h2 { text-align: center; }
+
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar li {
+    list-style: none;
+    margin: 12px 0;
+}
+
+/* BUTTON STYLE */
+.sidebar-btn {
+    display: block;
+    padding: 12px;
+    background: #f7d65a;
+    border-radius: 10px;
+    text-align: center;
+
+    /* IMPORTANT PART */
+    text-decoration: none;   /* tanggal underline */
+    color: #000;             /* tanggal blue */
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.sidebar-btn:hover {
+    background: #ffffff;
+}
+
+/* ACTIVE PAGE */
+.sidebar-btn.active {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.admin { margin-top: 30px; text-align: center; }
+
+/* ================= MAIN ================= */
+.main {
+    margin-left: 240px;
+    padding: 30px;
+}
+
+/* ================= OVERVIEW ================= */
+.overview {
+    background: #f8e58c;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+    margin-bottom: 30px;
+}
+
+.overview h3 {
+    text-align: center;
+    color: #b48a00;
+    margin-bottom: 25px;
+}
+
+/* GRID */
+.overview-cards {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 25px;
+    text-align: center;
+}
+
+/* CLICKABLE CARD */
+.overview-btn {
+    text-decoration: none;
+    color: #b48a00;
+    font-weight: bold;
+    font-size: 13px;
+    user-select: none;
+}
+
+/* NUMBER BOX */
+.overview-box {
+    width: 80px;
+    height: 80px;
+    background: #f1c40f;
+    border-radius: 18px;
+    margin: 0 auto 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+
+    box-shadow:
+        inset 0 4px 6px rgba(255,255,255,0.3),
+        inset 0 -6px 8px rgba(0,0,0,0.25),
+        0 4px 6px rgba(0,0,0,0.3);
+
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    cursor: pointer;
+}
+
+/* PUSH EFFECT FOR OVERVIEW */
+.overview-btn:active .overview-box {
+    transform: translateY(4px);
+    box-shadow:
+        inset 0 6px 10px rgba(0,0,0,0.35),
+        0 2px 3px rgba(0,0,0,0.3);
+}
+
+/* ================= TABLE ================= */
+.table-card {
+    background: #f8e58c;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+}
+
+.table-card h3 {
+    text-align: center;
+    color: #b48a00;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th {
+    background: #f2d24b;
+    color: #6b5a00;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #bfa233;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #bfa233;
+    font-size: 13px;
+    text-align: center;
+}

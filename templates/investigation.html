@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employer's Work Accident / Illness Report</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='investigation.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+     <aside class="sidebar">
+        <img src="{{ url_for('static', filename='image/hazard_logo.png') }}" class="logo">
+        <h2>HAZARD HUB</h2>
+
+        <ul class="menu">
+            <li class="active">
+                <a href="{{ url_for('dashboard') }}" class="sidebar-btn">Dashboard</a>
+            </li>
+            <li>
+                <a href="{{ url_for('incident_report') }}" class="sidebar-btn">Report</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('fire_exti') }}" class="sidebar-btn">Fire Protection</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('concern') }}" class="sidebar-btn">Concern</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('file_page') }}" class="sidebar-btn">File</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('about') }}" class="sidebar-btn">About Us</a>
+            </li>
+        </ul>
+
+        <div class="admin">
+            ADMIN 👤
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <a href="{{ url_for('incident_report') }}" class="btn back-btn">
+        Back
+        </a>
+
+        <h1>EMPLOYER'S WORK ACCIDENT / ILLNESS REPORT</h1>
+
+        <form>
+
+        <!-- EMPLOYER -->
+        <div class="section">
+            <div class="section-title">Employer</div>
+
+            <label>Establishment: <span>Clarmil Manufacturing Inc.</span></label>
+            <label>Address: <span>#0001 Barangay Mamatid, Cabuyao City, Laguna</span></label>
+
+                <div>
+                    <label>Nature of Business: <span>Food Manufacturing</span></label>
+                </div>
+                <div>
+                    <label>Name of Employer: <span>Eleonor De Lara</span></label>
+                </div>
+                <div>
+                    <label>Nationality: <span>Filipino</span></label>
+                </div>
+                <div class="row">
+                    <div>
+                        <label>No. of Employees: </label>
+                    </div>
+                    <div>
+                        <label>Male:</label>
+                        <input type="text">
+                    </div>
+                     <div>
+                        <label>Female:</label>
+                        <input type="text">
+                    </div>
+                     <div>
+                        <label>Total:</label>
+                        <input type="text">
+                    </div>
+                </div>
+        </div>
+
+        <!-- INJURED -->
+        <div class="section">
+            <div class="section-title">Injured / Illness Person</div>
+
+                <div>
+                    <label>Name:</label>
+                    <input type="text">
+                </div>
+                <div class="row">
+                <div>
+                    <label>Age:</label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label>Sex:</label>
+                    <select><option>Male</option><option>Female</option></select>
+                </div>
+                <div>
+                    <label>Civil Status:</label>
+                    <select><option>Single</option><option>Marriage</option></select>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label>Employment Status:</label>
+                    <select><option>Regular</option><option>Contractual</option></select>
+                </div>
+                <div>
+                    <label>Employee ID:</label>
+                    <input type="text">
+                </div>
+            </div>
+                <div>
+                    <label>   Affliated Organization :
+                        ( Company /Agency Name )</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Date Hired::</label>
+                    <input type="date">
+                </div>
+
+            <div class="row">
+                <div>
+                    <label>Division / Section </label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Position / Designation :</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label>Immediate Superior :</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Position of Immediate Superior  :</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label>Average Weekly Wage : </label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>No. of Dependend :</label>
+                    <input type="text">
+                </div>
+            </div>
+                <div>
+                    <label>Length of service prior to accident or illness :</label>
+                    <input type="text">
+                </div>
+
+            <div class="row">
+                <div>
+                    <label>Occupation : </label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Year of Experience at Occupation :</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label>Work Shift Start : </label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Work Shift End :</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="row">
+                <div>
+                    <label>Hours of Work/Day : </label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label>Day/Week : </label>
+                    <input type="text">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ILLNESS -->
+        <div class="section">
+            <div class="section-title">Illness</div>
+
+            <label>Reportable Illness:</label>
+            <input type="text">
+
+            
+                <div>
+                    <label>If reported illness is COVID-19, was it fatal?
+                        <input type="checkbox"> Yes
+                        <input type="checkbox"> No  
+                    </label>
+                </div>
+
+                <div>
+                    <label>Affected Worker’s Work Location :</label>
+                    <select>
+                        <option>Physically Reporting to Work</option>
+                        <option>In Alternative Work Arrangement</option>
+                        <option>Hybrid/Combination</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label>Date Illness Began:</label>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <label>Date Returned to Work:</label>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <label>Day Lost :</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>and/or Day Charged :</label>
+                        <input type="text">
+                    </div>
+                </div>
+        </div>
+
+        <!-- ACCIDENT -->
+        <div class="section">
+            <div class="section-title">Accident</div>
+
+            <div class="row">
+                <div>
+                    <label>Date of Accident:</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label>Time:</label>
+                    <input type="time">
+                </div>
+            </div>
+
+            <label>Location of Accident:</label>
+            <input type="text">
+            <div>
+                <label>Affected Worker’s Work Location :</label>
+                    <select>
+                        <option>Personal Injury</option>
+                        <option>Property/Equipment Damage</option>
+                        <option>Illness</option>
+                        <option>Vehicle</option>
+                        <option>Environment</option>
+                        <option>Fire</option>
+                        <option>Thief</option>
+                        <option>Sabotage</option>
+                        <option>External Assessment</option>
+                        <option>Explosives Involved</option>
+                        <option>Radiation</option>
+                        <option>Near Miss</option>
+                        <option>Other</option>
+                    </select>
+            </div>
+
+            <label>If other, pls specify</label>
+            <input type="text">
+
+            <label>Description of Accident:</label>
+            <textarea></textarea>
+
+            <label>Was injured doing regular part of job at the time of accident :</label>
+            <input type="text">
+
+            <label>If not, Why?</label>
+            <textarea></textarea>
+        </div>
+
+        <!-- ROOT CAUSE -->
+        <div class="section">
+            <div class="section-title">Root Cause Analysis</div>
+
+            <label>Activity / Task:</label>
+            <input type="text">
+
+            <label>Contributing Factor:</label>
+            <input type="text">
+        </div>
+
+        <!-- SUBMIT -->
+        <div class="actions">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="button" class="template-btn">Show Template</button>
+        </div>
+
+        </form>
+
+    </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Account | Hazard Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='file.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <img src="{{ url_for('static', filename='image/hazard_logo.png') }}" class="logo">
+        <h2>HAZARD HUB</h2>
+
+        <ul class="menu">
+            <li class="active">
+                <a href="{{ url_for('dashboard') }}" class="sidebar-btn">Dashboard</a>
+            </li>
+            <li>
+                <a href="{{ url_for('incident_report') }}" class="sidebar-btn">Report</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('fire_exti') }}" class="sidebar-btn">Fire Protection</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('concern') }}" class="sidebar-btn">Concern</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('file_page') }}" class="sidebar-btn">File</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('about') }}" class="sidebar-btn">About Us</a>
+            </li>
+        </ul>
+
+        <div class="admin">
+            ADMIN 👤
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+    </main>
+
+</div>
+
+</body>
+</html>

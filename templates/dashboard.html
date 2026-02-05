@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hazard Hub Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <img src="{{ url_for('static', filename='image/hazard_logo.png') }}" class="logo">
+        <h2>HAZARD HUB</h2>
+
+        <ul class="menu">
+            <li class="active">
+                <a href="{{ url_for('dashboard') }}" class="sidebar-btn">Dashboard</a>
+            </li>
+            <li>
+                <a href="{{ url_for('incident_report') }}" class="sidebar-btn">Report</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('fire_exti') }}" class="sidebar-btn">Fire Protection</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('concern') }}" class="sidebar-btn">Concern</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('file_page') }}" class="sidebar-btn">File</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('about') }}" class="sidebar-btn">About Us</a>
+            </li>
+        </ul>
+
+        <div class="admin">
+            ADMIN 👤
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+        <div class="header">DASHBOARD OVERVIEW</div>
+
+        <!-- STATS -->
+        <div class="stats">
+            <div class="card">Total Incident<br><span>12</span></div>
+            <div class="card">Hazard Identified<br><span>20</span></div>
+            <div class="card">Resolved Incidents<br><span>15</span></div>
+            <div class="card">Pending Incidents<br><span>5</span></div>
+        </div>
+
+        <!-- BAR CHART -->
+        <div class="panel">
+            <h3>Incident Summary for January 2025</h3>
+            <canvas id="incidentChart"></canvas>
+        </div>
+
+        <!-- LOWER CHARTS -->
+        <div class="grid">
+            <div class="panels">
+                <h3>Incidents Per Month</h3>
+                <canvas id="monthlyChart"></canvas>
+            </div>
+
+            <div class="panels">
+                <h3>Fire Protection Report Summary</h3>
+                <canvas id="fireChart"></canvas>
+            </div>
+        </div>
+
+        <!-- TABLE -->
+        <div class="panel">
+            <h3>HAZARD & CONCERN / SUGGESTION REPORT</h3>
+            <table>
+                <tr>
+                    <th>Date</th><th>Time</th><th>Type</th><th>Reported By</th>
+                    <th>Status</th><th>Location</th><th>Inspected By</th>
+                </tr>
+                <tr>
+                    <td>12-15-2025</td><td>7:00 am</td><td>Hazard</td>
+                    <td>Juan Dela Cruz</td><td>Required Action</td>
+                    <td>Inventory Room</td><td>Eleo Lara</td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+</div>
+
+<script>
+new Chart(document.getElementById("incidentChart"), {
+    type: "bar",
+    data: {
+        labels: ["Near Miss","First Aid","Minor","Major","Damage"],
+        datasets: [{ data: [5,25,10,15,2,60], backgroundColor: ["yellow","green","orange","blue","red"] }]
+    }
+});
+
+new Chart(document.getElementById("monthlyChart"), {
+    type: "bar",
+    data: {
+        labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+        datasets: [{ data: [20,60,30,45,30,75,10,48,18,90,52,40], backgroundColor: "#f1c40f" }]
+    }
+});
+
+new Chart(document.getElementById("fireChart"), {
+    type: "bar",
+    data: {
+        labels: ["Fire Exit","Extinguisher","Alarm","Hose","FDAS","Assembly","Others"],
+        datasets: [{ data: [20,60,30,45,30,75,10], backgroundColor: "#f1c40f" }]
+    }
+});
+</script>
+
+</body>
+</html>

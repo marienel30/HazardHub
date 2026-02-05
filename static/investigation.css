@@ -1,0 +1,151 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+
+body { margin: 0; background: #fdfdfd; }
+
+.container { display: block; }
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background: #f1c40f;
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo { 
+     width: 200px;
+     display: block;
+     margin-left: -15px; 
+     margin-bottom: -15px;
+    }
+
+.sidebar h2 { text-align: center; }
+
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar li {
+    list-style: none;
+    margin: 12px 0;
+}
+
+/* BUTTON STYLE */
+.sidebar-btn {
+    display: block;
+    padding: 12px;
+    background: #f7d65a;
+    border-radius: 10px;
+    text-align: center;
+
+    /* IMPORTANT PART */
+    text-decoration: none;   /* tanggal underline */
+    color: #000;             /* tanggal blue */
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.sidebar-btn:hover {
+    background: #ffffff;
+}
+
+/* ACTIVE PAGE */
+.sidebar-btn.active {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.admin { margin-top: 30px; text-align: center; }
+
+/* MAIN */
+.main {
+    margin-left: 220px; /* 220 + konting allowance */
+    padding: 20px;
+ }
+
+.back-btn {
+    float: right;
+    background: #f2c200;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 20px;
+    /* IMPORTANT PART */
+    text-decoration: none;   /* tanggal underline */
+    color: #000;             /* tanggal blue */
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    color: #c89d00;
+}
+
+/* FORM */
+.section {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.section-title {
+    background: #f2c200;
+    color: white;
+    padding: 5px 10px;
+    margin: -15px -15px 15px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 3px;
+}
+
+
+textarea {
+    height: 80px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row div {
+    flex: 1;
+}
+
+/* ACTIONS */
+.actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn, .template-btn {
+    background: #f2c200;
+    border: none;
+    padding: 8px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.submit-btn:hover,
+.template-btn:hover {
+    background: #d4aa00;
+}

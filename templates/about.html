@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | Hazard Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+     <aside class="sidebar">
+        <img src="{{ url_for('static', filename='image/hazard_logo.png') }}" class="logo">
+        <h2>HAZARD HUB</h2>
+
+        <ul class="menu">
+            <li class="active">
+                <a href="{{ url_for('dashboard') }}" class="sidebar-btn">Dashboard</a>
+            </li>
+            <li>
+                <a href="{{ url_for('incident_report') }}" class="sidebar-btn">Report</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('fire_exti') }}" class="sidebar-btn">Fire Protection</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('concern') }}" class="sidebar-btn">Concern</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('file_page') }}" class="sidebar-btn">File</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('about') }}" class="sidebar-btn">About Us</a>
+            </li>
+        </ul>
+
+        <div class="admin">
+            ADMIN 👤
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- ERT -->
+        <h1 class="title">ERT Organization Chart</h1>
+        <div class="ert-row">
+            <div class="ert-card">
+                <div class="photo"></div>
+                <b>Name</b><br><small>Org. Position</small>
+            </div>
+            <div class="ert-card">
+                <div class="photo"></div>
+                <b>Name</b><br><small>Org. Position</small>
+            </div>
+            <div class="ert-card">
+                <div class="photo"></div>
+                <b>Name</b><br><small>Org. Position</small>
+            </div>
+            <div class="ert-card">
+                <div class="photo"></div>
+                <b>Name</b><br><small>Org. Position</small>
+            </div>
+            <div class="ert-card">
+                <div class="photo"></div>
+                <b>Name</b><br><small>Org. Position</small>
+            </div>
+        </div>
+
+        <!-- VISION / MISSION -->
+        <div class="vm-box">
+            <div class="vm-card">
+                <h3>GBI Vision</h3>
+                <p>To be the leading Filipino brand that delivers superior quality baked goods and food choices with the most heartwarming experience to every Filipino family.</p>
+            </div>
+            <div class="vm-card">
+                <h3>GBI Mission</h3>
+                <p>To make everyday a celebration</p>
+            </div>
+            <div class="vm-card">
+                <h3>QA Mission</h3>
+                <p>We will drive a world-class food safety, environment, quality and safety management system.</p>
+            </div>
+        </div>
+
+        <!-- POLICY -->
+        <div class="policy">
+            <h2>ENVIRONMENT, HEALTH, AND SAFETY POLICY</h2>
+            <p>
+                Goldilocks bakeshop Inc. is committed to ensure the well-being of our employees, visitors, and communities
+                 in  which we operate. We recognize that effective Environment, Health, and Safety management is essential 
+                 for the success of our business, as well as the preservation of our environment. A responsibility that each 
+                 GBI employees is committed to upload. We will :
+            </p>
+            <p>   · Comply to all applicable statutory and regulatory requirements on environment, health, and safety.</p>
+            <p>   · Fulfill all compliance obligations and ensure that all licenses, permits, and certificates are updated and valid.</p>
+            <p>   · Strive to minimize our environmental impact by promoting the efficient use of resources, managing generated waste,       
+         and incorporating environmentally sustainable practices.</p>
+            <p>    · Provide necessary trainings, tools, equipment, and resources to all employees to perform their task safety & 
+         responsibility and support the effective implementation of out policies and procedures.</p>
+            <p>     · Priorities prevention of accidents, injuries, and occupational illnesses through the proactive identification and reporting 
+         of workplace hazards, evaluation of its associated risks and effective implementation of incident management 
+         procedures.</p>
+            <p>   · Foster open communication and engagement with employees, supplier, and the community for awareness and better 
+         understanding on Environmental Health and Safety matters.</p>
+            <p>    · Establish and maintain emergency response and preparedness plans to effectively manage and mitigate potential      
+         environmental  and safety incidents.</p>
+            <p>    · Continuously improve our Environmental Health and Safety performance by setting  and reviewing objectives and 
+         targets, monitoring our progress, and implementing best practices.</p>
+            <p>    Goldilocks Bakeshop Inc. is dedicated to ensuring the comprehensive education and alignment of all our employees 
+                and stakeholders with the company’s unwavering commitment to fostering a safe and healthy workplace. We are equally 
+                devoted to implementing robust programs that safeguard the environment, reflecting our responsibility to sustainablity 
+                and corperate citizenship.</p>
+        </div>
+
+        <!-- HOTLINE & ROUTES -->
+        <div class="two-box">
+            <div class="box">
+                <h3>Emergency Hotline</h3>
+            </div>
+            <div class="box">
+                <h3>Emergency Routes</h3>
+            </div>
+        </div>
+
+        <!-- MILESTONE -->
+        <h2 class="title">EHS Milestone</h2>
+        <div class="milestone">
+            <div class="milestone-img"></div>
+            <div>
+                <h3>Name of Achievement</h3>
+                <p>Detail</p>
+            </div>
+            <div class="arrow">›</div>
+        </div>
+
+    </main>
+</div>
+
+</body>
+</html>

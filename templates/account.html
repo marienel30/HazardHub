@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Account | Hazard Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='account.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <img src="{{ url_for('static', filename='image/hazard_logo.png') }}" class="logo">
+        <h2>HAZARD HUB</h2>
+
+        <ul class="menu">
+            <li class="active">
+                <a href="{{ url_for('dashboard') }}" class="sidebar-btn">Dashboard</a>
+            </li>
+            <li>
+                <a href="{{ url_for('incident_report') }}" class="sidebar-btn">Report</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('fire_exti') }}" class="sidebar-btn">Fire Protection</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('concern') }}" class="sidebar-btn">Concern</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('file_page') }}" class="sidebar-btn">File</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('about') }}" class="sidebar-btn">About Us</a>
+            </li>
+        </ul>
+
+        <div class="admin">
+            ADMIN 👤
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- TOP BUTTONS -->
+        <div class="top-actions">
+            <a href="{{ url_for('file_page') }}" class="btn cert-btn">
+        Certificate
+        </a>
+            <a href="{{ url_for('account') }}" class="btn acc-btn">
+        Account
+        </a>
+            <button class="add-btn">Add</button>
+        </div>
+
+        <!-- TABLE CARD -->
+        <div class="card">
+
+            <div class="card-header">
+                <div>
+                    <label>Search</label>
+                    <input type="text">
+                </div>
+                <h2>Employee Account</h2>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Cellphone No.</th>
+                        <th>Position in Company</th>
+                        <th>ID No.</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Dela Cruz</td>
+                        <td>JuanD_01</td>
+                        <td>Juan11225</td>
+                        <td>09xx-xxx-xxx</td>
+                        <td>Icing</td>
+                        <td>k014015</td>
+                        <td class="action">
+                            ✏️ 🗑️
+                        </td>
+                    </tr>
+                    <!-- more rows -->
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>

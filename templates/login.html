@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hazard Hub Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- TOP BACKGROUND DESIGN -->
+<div class="bg-top"></div>
+
+<div class="login-wrapper">
+    <div class="login-card">
+
+        <div class="logo">
+            <img src="{{ url_for('static', filename='image/hazard_logo.png') }}" alt="Hazard Hub">
+        </div>
+
+        <h1>Hazard <span>Hub</span></h1>
+
+        <div class="form-box">
+            {% if error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+
+            <form method="POST">
+                <label>Email</label>
+                <input type="text" name="username" required>
+
+                <label>Password</label>
+                <input type="password" name="password" required>
+
+                <button type="submit">LOGIN</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!-- BOTTOM BACKGROUND DESIGN -->
+<div class="bg-bottom"></div>
+
+</body>
+</html>

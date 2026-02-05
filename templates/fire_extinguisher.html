@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hazard Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='fire_extinguisher.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+     <aside class="sidebar">
+        <img src="{{ url_for('static', filename='image/hazard_logo.png') }}" class="logo">
+        <h2>HAZARD HUB</h2>
+
+        <ul class="menu">
+            <li class="active">
+                <a href="{{ url_for('dashboard') }}" class="sidebar-btn">Dashboard</a>
+            </li>
+            <li>
+                <a href="{{ url_for('incident_report') }}" class="sidebar-btn">Report</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('fire_exti') }}" class="sidebar-btn">Fire Protection</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('concern') }}" class="sidebar-btn">Concern</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('file_page') }}" class="sidebar-btn">File</a>
+            </li>
+            <li>
+                 <a href="{{ url_for('about') }}" class="sidebar-btn">About Us</a>
+            </li>
+        </ul>
+
+        <div class="admin">
+            ADMIN 👤
+        </div>
+    </aside>
+
+<main class="main">
+
+    <!-- FIRE PROTECTION OVERVIEW -->
+    <div class="overview">
+        <h3>FIRE PROTECTION OVERVIEW</h3>
+
+        <div class="overview-cards">
+
+            <a  href="{{ url_for('fire_extinguisher') }}" class="overview-btn">
+                <div class="overview-box">12</div>
+                <p>Fire<br>Extinguisher</p>
+            </a>
+
+            <a  href="{{ url_for('emergency_light') }}" class="overview-btn">
+                <div class="overview-box">16</div>
+                <p>Emergency<br>Light</p>
+            </a>
+
+            <a  href="{{ url_for('emergency_exit') }}" class="overview-btn">
+                <div class="overview-box">9</div>
+                <p>Emergency<br>Exit</p>
+            </a>
+
+            <a  href="{{ url_for('fire_cabinet') }}" class="overview-btn">
+                <div class="overview-box">4</div>
+                <p>Fire Cabinet<br>with Hose Set</p>
+            </a>
+
+            <a  href="{{ url_for('fdas') }}" class="overview-btn">
+                <div class="overview-box">4</div>
+                <p>FDAS</p>
+            </a>
+
+            <a  href="{{ url_for('manual_bell') }}" class="overview-btn">
+                <div class="overview-box">11</div>
+                <p>Manual Bell<br>Alarm</p>
+            </a>
+
+            <a  href="{{ url_for('fire_suppression') }}" class="overview-btn">
+                <div class="overview-box">8</div>
+                <p>Fire<br>Suppression</p>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- DAILY FDAS TABLE -->
+    <div class="table-card">
+        <h3>Monthly Fire Extinguisher Inspection Logsheet</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Fire Extinguisher No.</th>
+                    <th>Location/Area</th>
+                    <th>Type of Fire Extinguisher</th>
+                    <th>Capacity<br>(lbs)</th>
+                    <th>No Obstruction</th>
+                    <th>Lable is Visible</th>
+                    <th>Safety/Pin</th>
+                    <th>Tag in Place</th>
+                    <th>No Physical Damage</th>
+                    <th>Other Remarks</th>
+                    <th>Inspected by</th>
+                    <th>Date of Inspected</th>
+                    <th>Expired Date</th>
+                    <th>Picture</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td colspan="15">&nbsp;</td></tr>
+                <tr><td colspan="15">&nbsp;</td></tr>
+                <tr><td colspan="15">&nbsp;</td></tr>
+                <tr><td colspan="15">&nbsp;</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+
+</body>
+</html>

@@ -210,8 +210,12 @@
             
                 <div>
                     <label>If reported illness is COVID-19, was it fatal?
-                        <input type="checkbox"> Yes
-                        <input type="checkbox"> No  
+                        <div class="checkbox-group">
+                        <label>Yes</label>
+                        <input type="checkbox"> 
+                        <label>No</label>
+                        <input type="checkbox"> 
+                    </div>
                     </label>
                 </div>
 
@@ -349,7 +353,7 @@
                     <label>Part/s of Body Affected </label>
             </div>
 
-            <div class="row">
+            <div class="rows">
                 <div class="columns">
                     <div>
                         <label>Head </label>
@@ -470,6 +474,7 @@
                         <input type="text">
                     </div>
                 </div>
+        </div>
 
          <!-- Cause of Accident -->
         <div class="section">
@@ -537,11 +542,61 @@
         <div class="section">
             <div class="section-title">Root Cause Analysis</div>
 
-            <label> The Agency Involved :</label>
+            <label>Activity / Task :</label>
             <input type="text">
 
-            <label>The Agency part Involved :</label>
-            <input type="text">
+           <div>
+                <label>Job Relevance : 
+                    <div class="checkbox-group">
+                        <label>Yes</label>
+                        <input type="checkbox"> 
+                        <label>No</label>
+                        <input type="checkbox"> 
+                    </div>
+                </label>
+            </div>
+
+            <div>
+                <label>Equipment Condition : 
+                    <div class="checkbox-group">
+                        <label>Yes</label>
+                        <input type="checkbox"> 
+                        <label>No</label>
+                        <input type="checkbox"> 
+                    </div>
+                </label>
+
+                <label>If no, Why ? :</label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label>Safeguard Provided ? : 
+                        <div class="checkbox-group">
+                        <label>Yes</label>
+                        <input type="checkbox"> 
+                        <label>No</label>
+                        <input type="checkbox"> 
+                    </div>
+                </label>
+            </div>
+
+            <div>
+                <label>Supervision Present ? : 
+                    <div class="checkbox-group">
+                        <label>Yes</label>
+                        <input type="checkbox"> 
+                        <label>No</label>
+                        <input type="checkbox"> 
+                    </div>
+                </label>
+
+                <label>If yes, indicate name and position ? :</label>
+                <input type="text">
+                <label>If no, why? :</label>
+                <input type="text">
+            </div>
+
         </div>
 
         <!-- SUBMIT -->

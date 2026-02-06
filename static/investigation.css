@@ -130,6 +130,49 @@ textarea {
     flex: 1;
 }
 
+.rows {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.rows input {
+    margin-top: -50px;
+    height: 20px;
+}
+
+.rows label {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.rows div {
+    flex: 1;
+}
+
+
+.checkbox-group {
+    display: flex;
+    gap: 30px;
+
+}
+
+.checkbox-group input {
+    height: 20px;
+    margin-left: -500px;
+    margin-top: 10px;
+}
+
+.checkbox-group label {
+    margin-bottom: -10px;
+    margin-left: 60px;
+}
+
+.checkbox-group div {
+    flex: 1;
+}
+
+
 /* ACTIONS */
 .actions {
     text-align: center;

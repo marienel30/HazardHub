@@ -159,13 +159,15 @@ textarea {
 
 .checkbox-group input {
     height: 20px;
-    margin-left: -500px;
+    margin-left: -400px;
     margin-top: 10px;
 }
 
 .checkbox-group label {
     margin-bottom: -10px;
     margin-left: 60px;
+    width: 300px;
+
 }
 
 .checkbox-group div {
